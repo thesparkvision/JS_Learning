@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Web page</h1>
+    <p>This is a demo of javascript datatypes</p>
+
+    <script>
+        //Javascript variable can store many datatypes, it is dynamic in nature
+        var x=5;
+        x=4.5;
+        x="Sohan";
+        console.log(x);
+
+        //To store large or extra small numbers, we can also use exponential notations
+        var x1=123e5;
+        var x2=123e-10;
+        console.log(x1);
+        console.log(x2);
+
+        //Javascript also have boolean types
+        var x3=(3==5);
+        console.log(x3);
+
+        //Javascript arrays
+        var carNames=['Volvo','Nano','Maruti Suzuki']
+        console.log(carNames)
+
+        //Javascript objects
+        var person={firstName:'Rohit',lastName:'Sharma',age:34,eyeColor:'Brown'}
+        console.log(person)
+
+        //Javascript typeof operator
+        console.log(typeof(carNames))
+        console.log(typeof(person))
+        console.log(typeof(undefined))
+        console.log(typeof(23))
+
+        //Empty value. both valid and legal, it has a type
+        var a='';
+        console.log(a);
+        console.log(typeof(a));
+
+        //Null value
+        person={firstName:'Sumit',lastName:'Shukla'}
+        person=null; //now the value is null,but type is object
+        console.log(person,typeof(person))
+
+        person={firstName:'Sameer',lastName:'Agrawal'}
+        person=undefined; //now both valye and type are undefined
+        console.log(person,typeof(person))
+
+        //Difference between null and undefined
+        console.log(null==undefined)
+        console.log(null===undefined)
+        console.log(typeof(null))
+        console.log(typeof(undefined))
+
+        //typeof returns objects for arrays,objects and null & function for a function
+        console.log(function myFunc(){})
+        
+    </script>
+</body>
+</html>
