@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Web page</h1>
+    <p>This is a demo of javascript variables</p>
+    <p id='demo'></p>
+    <p id='undef'>Undefined value test: </p>
+    <script>
+        //Declaration in different lines, Assingment 
+        var pi=3.4;
+        var person="John Doe";
+        var answer='Yes I am!';
+        document.getElementById('demo').innerHTML=person;
+ 
+        //Declaration in same line
+        var e=2.9,mentor="Rohit",marks=45;
+
+        //Checking an undefined value
+        var carName;
+        var printPara=document.getElementById('undef')
+        printPara.innerHTML+=carName;
+
+        //Redeclaring javascript variables
+        var cricketPlayer='Virat';
+        var cricketPlayer;
+        console.log("The cricket player name is "+cricketPlayer); //check in Inspect Element console window
+        
+    </script>
+</body>
+</html>

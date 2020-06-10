@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Web page</h1>
+    <p>Here we are demonstrating how concatenation works in Javascript and some naming that is allowed</p>
+    <p id='concat1'></p>
+    <p id='concat2'></p>
+    <p id='concat3'></p>
+    <script>
+        var x="5"+2+3;
+        var y=2+3+"5";
+        var z=2+'3'+5;
+
+        document.getElementById('concat1').innerHTML='"5"+2+3 = '+x;
+        document.getElementById('concat2').innerHTML='2+3+"5" = '+y;
+        document.getElementById('concat3').innerHTML='2+"3"+5 = '+z;
+
+        var $$dollarName=3;
+        var _underscoreName=7;
+    </script>
+</body>
+</html>
